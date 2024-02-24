@@ -39,7 +39,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
         position: "static",
         background: "none",
         boxShadow: "none",
-        backgroundColor: "gold",
+        // backgroundColor: "gold",
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
