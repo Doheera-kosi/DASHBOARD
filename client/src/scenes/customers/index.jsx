@@ -56,9 +56,9 @@ const Customers = () => {
   ]
 
   return (
-    <Box m="0 2.5rem">
+    <Box m="1rem 2.5rem">
       <Header title="CUSTOMERS" subtitle="List of Customers" />
-      <Box mt="20px" height="75vh"
+      <Box mt="20px" height="80vh"
         sx={{
           "& .MuiDataGrid-root": {
             border: "none"
