@@ -89,9 +89,9 @@ const Transactions = () => {
           loading={isLoading || !data}
           getRowId={(row) => row._id}
           rows={(data && data.transactions) || []}
-          rowPerPageOptions ={[20, 50, 100]}
           columns={columns}
           rowCount={(data && data.total) || 0}
+          rowsPerPageOptions={[20, 50, 100]}
           pagination
           page={page}
           pageSize={pageSize}
@@ -100,7 +100,7 @@ const Transactions = () => {
           onPageChange={(newPage) => setPage(newPage)}
           onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
           onSortModelChange={(newSortModel) => setSort(...newSortModel)}
-          components={{ Toolbar: DataGridCustomToolbar }}
+          components={{Toolbar: DataGridCustomToolbar}}
           componentsProps={{
             toolbar: {searchInput, setSearchInput, setSearch}
           }}
