@@ -43,7 +43,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
       { sales: 0, units: 0 }
     );
     
-    return [[totalSalesLine], [totalUnitsLine]]
+    return [[totalSalesLine], [totalUnitsLine]];
   }, [data, theme.palette.secondary]);
 
   if (!data || isLoading) return "Loading...";
