@@ -29,13 +29,13 @@ const Customers = () => {
       field: "phoneNumber",
       headerName: "Phone Number",
       flex: 0.5,
-      renderCell: (params) =>{
+      renderCell: (params) => {
         if (params.value) {
           return params.value.replace(/^(\d{3})(\d{3})(\d{4})/, "($1)$2-$3");
         } else {
           return "No Phone";
         }
-      }
+      },
     },
     {
       field: "country",
@@ -52,24 +52,25 @@ const Customers = () => {
       headerName: "Role",
       flex: 0.5,
     },
-
-  ]
+  ];
 
   return (
     <Box m="1rem 2.5rem">
       <Header title="CUSTOMERS" subtitle="List of Customers" />
-      <Box mt="20px" height="80vh"
+      <Box
+        mt="20px"
+        height="80vh"
         sx={{
           "& .MuiDataGrid-root": {
-            border: "none"
+            border: "none",
           },
-          "& .MuiDataGrid-cell" : {
-            borderBottom: "none"
+          "& .MuiDataGrid-cell": {
+            borderBottom: "none",
           },
-          "& .MuiDataGrid-columnHeaders" : {
+          "& .MuiDataGrid-columnHeaders": {
             backgroundColor: theme.palette.background.alt,
             color: theme.palette.secondary[100],
-            borderBottom: "none"
+            borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
             backgroundColor: theme.palette.primary.light,
@@ -77,10 +78,11 @@ const Customers = () => {
           "& .MuiDataGrid-footerContainer": {
             backgroundColor: theme.palette.background.alt,
             color: theme.palette.secondary[100],
-            borderTop: "none"          },
+            borderTop: "none",
+          },
           "& .MuiDataGrid-toolbarContainer .MuiButton-tex": {
-            color: `${theme.palette.secondary[200]} !important`
-          }
+            color: `${theme.palette.secondary[200]} !important`,
+          },
         }}
       >
         <DataGrid

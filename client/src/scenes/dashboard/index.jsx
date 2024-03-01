@@ -160,7 +160,7 @@ const Dashboard = () => {
           sx={{
             "& .MuiDataGrid-root": {
               border: "none",
-              borderRadius: "5rem"
+              borderRadius: "5rem",
             },
             "& .MuiDataGrid-cell": {
               borderBottom: "none",
@@ -197,12 +197,17 @@ const Dashboard = () => {
           p="1rem"
           borderRadius="0.55rem"
         >
-          <Typography variant="h6" sx={{color: theme.palette.secondary[100]}}>
+          <Typography variant="h6" sx={{ color: theme.palette.secondary[100] }}>
             Sales By Category
           </Typography>
           <BreakdownChart isDashboard={true} />
-          <Typography p="0 0.6rem" fontSize="0.8rem" sx={{color: theme.palette.secondary[200]}}>
-            Breakdown of real states and information via category for revenue made for this year and total Sales
+          <Typography
+            p="0 0.6rem"
+            fontSize="0.8rem"
+            sx={{ color: theme.palette.secondary[200] }}
+          >
+            Breakdown of real states and information via category for revenue
+            made for this year and total Sales
           </Typography>
         </Box>
       </Box>

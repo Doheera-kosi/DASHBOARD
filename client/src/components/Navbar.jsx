@@ -6,7 +6,7 @@ import {
   Search,
   SettingsOutlined,
 } from "@mui/icons-material";
-import React, { Profiler, useState } from "react";
+import React, { useState } from "react";
 import FlexBetween from "components/FlexBetween";
 import { useDispatch } from "react-redux";
 import { setMode } from "state";
@@ -39,7 +39,6 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
         position: "static",
         background: "none",
         boxShadow: "none",
-        // backgroundColor: "gold",
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
