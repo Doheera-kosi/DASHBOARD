@@ -2,7 +2,6 @@ import {
   Box,
   Divider,
   Drawer,
-  Icon,
   IconButton,
   List,
   ListItem,
